@@ -1,0 +1,81 @@
+#home {
+  .labelClass {
+    background: white;
+    padding: 5px 10px;
+    border: 1px solid #20A0FF;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #616264;
+  }
+  .labelClass1 {
+    background: gainsboro;
+    border: 1px solid #20A0FF;
+    color: white;
+  }
+  .labelClass_delete{
+    width: 15px;
+    height: 15px;
+    background: url("../../assets/fonticon/delete.png") no-repeat;
+    background-size: 15px 15px;
+  }
+  #container {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    border: 1px seagreen dot-dash;
+    background: white;
+    font-family: 微软雅黑;
+    .item {
+      position: absolute;
+      width: 120px;
+      height: 40px;
+      border: 2px solid gainsboro;
+      border-radius: 5px;
+      line-height: 40px;
+      font-size: 18px;
+      color: #616264;
+      cursor: pointer;
+
+
+
+      .drop_item {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 10px;
+        transform: translate(0, -50%);
+        cursor: Crosshair;
+      }
+
+      .drop_item_start {
+        background: url("../../assets/fonticon/start.png") no-repeat;
+        background-size: 20px 20px;
+      }
+      .drop_item_end{
+        background: url("../../assets/fonticon/end.png") no-repeat;
+        background-size: 20px 20px;
+      }
+      .drop_item_conmon{
+        background: url("../../assets/fonticon/list.png") no-repeat;
+        background-size: 20px 20px;
+      }
+
+    }
+    .item:hover{
+      background: gainsboro;
+      border:2px solid #20A0FF;
+    }
+    .jtk-source-hover{
+      border:2px solid #89D751;
+      background-color: white;
+      transition: .3s ease-in;
+    }
+   .jtk-target-hover {
+     border:2px solid #EA473A;
+      background-color: white;
+     transition: .3s ease-in;
+    }
+
+  }
+}
